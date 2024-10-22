@@ -5,6 +5,8 @@ validez de este. Al realizar la prueba de escritorio se manipulan variables
 las cuales se siguen paso a paso, lo que significa que de manera manual ejecuto (línea por línea) el algoritmo de inicio a fin y los valores que se generan de esa ejecución o corrida de algoritmo (ejecutar es sinónimo de correr
 un algoritmo o programa de computadora) en otras palabras, consiste en
 generar una tabla con tantas columnas como variables tenga el algoritmo y
+seguir las instrucciones asignando valores solicitados.
+Cabe señalar, como ya se mencionó, la prueba de escritorio sirve para identificar si se ejecuta correctamente el algoritmo por ello se recomienda realizar más de una ejecución o corrida con valores correctos solicitados y con
 valores incorrectos, y esto asegura aún más la veracidad y validez de este.
 Español estructurado. ¿Qué significa?
 Son instrucciones en nuestro idioma nativo, el español, donde se introducen las diversas estructuras algorítmicas que nos llevan paso a paso bajo
