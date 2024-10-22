@@ -1,0 +1,220 @@
+En los ejercicios mostrados de este libro se incluyó la prueba de escritorio.
+Y ¿qué es la prueba de escritorio?, es el funcionamiento simulado de un
+algoritmo el cual se lleva a cabo de manera manual, ayuda a determinar la
+validez de este. Al realizar la prueba de escritorio se manipulan variables
+las cuales se siguen paso a paso, lo que significa que de manera manual ejecuto (línea por línea) el algoritmo de inicio a fin y los valores que se generan de esa ejecución o corrida de algoritmo (ejecutar es sinónimo de correr
+un algoritmo o programa de computadora) en otras palabras, consiste en
+generar una tabla con tantas columnas como variables tenga el algoritmo y
+valores incorrectos, y esto asegura aún más la veracidad y validez de este.
+Español estructurado. ¿Qué significa?
+Son instrucciones en nuestro idioma nativo, el español, donde se introducen las diversas estructuras algorítmicas que nos llevan paso a paso bajo
+cierto orden para que sea muy fácil de entender y se desarrolla la solución
+de un problema de manera manual, dando paso al pseudocódigo y posteriormente a codificarlo. Es el primer acercamiento para desarrollar un algoritmo.
+CAPÍTULO 1.Estructura lineal | 23
+¿Qué es el pseudocódigo y porque usar PSeInt?
+El pseudocódigo (o falso lenguaje) se aplica a partir de ciertos lenguajes
+de programación aunque no son propiamente lenguajes de programación,
+por ello “pseudo” en donde se edita y plasma el algoritmo bajo la estructura y sintaxis propia del lenguaje de programación. La sintaxis son reglas
+técnicas que se aplican al plasmar y editar algoritmos y al no aplicarse es
+imposible que el algoritmo o programa se ejecute de manera correcta marcando error de ejecución, cuando se realicen los algoritmos en PSeInt esto
+se podrá confirmar.
+PSeInt es una herramienta desarrollada para el aprendizaje de algoritmos,
+que ayuda principalmente a estudiantes en aprender los fundamentos de
+la programación y al desarrollo de la lógica matemática, es la antesala al
+mundo de la programación.
+En PseInt, puedes usar todas las estructuras algorítmicas explicadas en
+este libro, y también “funciones” que se utilizan de manera similar que en
+otros lenguajes. Las funciones son scripts (líneas de código) almacenadas
+en un archivo que lleva un nombre (ver tabla 2) y resuelve cierta acción
+matemática o lógica sólo con el hecho de colocar el nombre de la función
+seguido de la variable que desees aplicar dicha acción de la función. Éstas
+no ayudan a evitar ciertos cálculos que tendríamos que plasmar en nuestro
+algoritmo o programa.
+Función Significado
+MOD Módulo (resto de la
+división entera)
+RC o RAIZ Raíz cuadrada
+ABS Valor absoluto
+EXP Exponente
+TRUNC Parte entera
+REDON Entero más cercano
+AZAR Entero aleatorio entre 0
+y -1
+Tabla 2. Funciones de PSeInt
+Existen más funciones que una vez adentrado en este mundo lo descubrirás poco a poco. Una vez comprendido lo anterior, te encuentras listo para
+resolver una serie de problemas básicos, se inicia con problemas graduales,
+por ahora sólo resolverás algoritmos simples sin ninguna estructura a los
+que llamamos algoritmos lineales. El consejo es que observes la estructura,
+24 Introducción a la Programación
+su secuencia con base en la figura 1 y leas detenidamente lo que se pide,
+antes de cualquier otra acción.
+Cada algoritmo está conformado por su leyenda o descripción a resolver, el
+algoritmo en español estructurado, su prueba de escritorio, el mismo algoritmo desarrollado en pseudocódigo en PSeInt y posteriormente codificado
+en Java. Lo que demuestra un panorama general y el proceso completo de
+llegar a codificar un programa, podrás comparar identificar y ver las diferencias de un resultado con otro. ¡Bienvenido!
+ESTRUCTURA LINEAL | Ejercicio 1 25
+Ejercicio 1
+Una persona desea invertir su capital en un banco y desea saber cuánto
+dinero ganará después de un mes si el banco le pagará intereses del 2%
+mensual, cree un algoritmo para solucionarlo.
+1. GANANCIA_INVERSION
+2. interes: Real
+3. dias, capital, ganancia: Entero
+4. Inicio
+5. interes<-0.02;
+6. dias<-0;
+7. capital<-0;
+8. ganancia<-0;
+9. Escribir “teclea capital”;
+10. Leer capital;
+11. Escribir “teclea dias_mes”;
+12. Leer dias;
+13. ganancia<-capital * dias * interes;
+14. Escribir “la ganancia es:”, ganancia;
+15. Fin
+PRUEBA DE ESCRITORIO
+GANANCIA_INVERSION
+interes dias capital ganancia
+0 0 0 0
+0.02 30 4200 2520
+ESTRUCTURA LINEAL
+26 Introducción a la Programación
+ALGORITMO EN PseInt
+PRUEBA DE ESCRITORIO EN PseInt
+1. / Una persona desea invertir su capital en un banco y desea
+saber
+2. / cuánto dinero ganará después, de un mes si el banco le pagará
+3. / intereses del 2% mensual, cree un algoritmo para
+solucionarlo.
+4. Algoritmo Ganancia_inversion
+5. DEFINIR interes Como Real;
+6. DEFINIR dias, capital, ganancia Como Entero;
+7. ESCRIBIR “Ingrese el monto a invertir: “;
+8. LEER capital;
+9. ESCRIBIR “Ingrese el número total de días del mes a
+considerar: “;
+10. LEER dias;
+11. interes <- 0.02;
+12. ganancia <- (capital * dias) * interes;
+13. ESCRIBIR “La ganancia por cobrar después del mes es de: “;
+14. ESCRIBIR ganancia;
+15. FinAlgoritmo
+A Ejecutar Paso a Paso
+Inicia la ejecución del algoritmo, inicializando las variables definidas y solicitando la introducción del valor del monto que se desea invertir.
+1. *** Ejecución Iniciada. ***
+2. Ingrese el monto a invertir:
+3. > 4200
+Una vez ingresado el valor del capital, nos solicita ingresar el número de
+días del mes a considerar. Ingresamos su valor.
+1. Ingrese el número total de días del mes a considerar:
+2. > 30
+CAPÍTULO 1.Estructura lineal | Ejercicio 1 27
+El programa realiza los cálculos y se despliega en pantalla el resultado. Finaliza la ejecución del programa.
+1. La ganancia por cobrar después del mes es de:
+2. 2520
+3. *** Ejecución Finalizada. **
+B Ejecutar
+1. *** Ejecución Iniciada. ***
+2. Ingrese el monto a invertir:
+3. > 4200
+Ingrese el número total de días del mes a considerar:
+4. > 31
+La ganancia por cobrar después del mes es de:
+5. 2976
+6. *** Ejecución Finalizada. ***
+ALGORITMO EN NETBEANS: JAVA
+1. * Una persona desea invertir su capital en un banco y desea
+saber cuánto dinero
+2. * ganará después de un mes si el banco le pagará intereses del
+2% mensual.
+3. /
+4. package EstructuraSecuencial;
+5. import java.util.Scanner;
+6. public class Ganancia_Inversion {
+7. public static void main(String[] args) {
+8. Scanner entrada = new Scanner(System.in);
+9. int dias;
+10. double capital, ganancia, interes;
+11.
+12. System.out.println(“Teclea Capital: “);
+13. capital = entrada.nextDouble();
+14. System.out.println(“Teclea Días Mes: “);
+15. dias = entrada.nextInt()
+28 Introducción a la Programación
+16. interes = 0.02;
+17. ganancia = capital * dias * interes;
+18. System.out.println(“La ganancia es: “ + ganancia);
+19. }
+20. }
+Resultado Java
+1. run:
+2. Teclea Capital:
+3. 5000
+4. Teclea Días Mes:
+5. 1
+6. La ganancia es: 100.0
+7. BUILD SUCCESSFUL (total time: 6 seconds)
+CAPÍTULO 1.Estructura lineal | Ejercicio 2 29
+Ejercicio 2
+Un constructor sabe que necesita 0.5 metros cúbicos de arena por metro
+cuadrado de revoque a realizar. Escriba un algoritmo que le permita obtener la cantidad de arena necesaria para revocar una pared cualquiera, según
+sus medidas (largo y alto) expresadas en metros.
+1. CANT_ARENA
+2. metros<-0.5;
+3. largo<-0;
+4. ancho<-0;
+5. Escribir “teclea largo de la pared”;
+6. Leer largo;
+7. Escribir “teclea ancho de la pared”;
+8. Leer ancho;
+9. arena<-largo*ancho*metros;
+10. Escribir “la cantidad de arena es: “, arena;
+11. Fin
+PRUEBA DE ESCRITORIO
+CANT_ARENA
+metros largo ancho arena
+0.5 0 0 0
+0.5 10 5 25
+ALGORITMO EN PseInt
+PRUEBA DE ESCRITORIO EN PseInt
+1. / Escriba un algoritmo que le permita obtener la cantidad de
+arena
+2. / necesaria para revocar una pared cualquiera, según sus
+medidas (largo
+3. / y alto) expresadas en metros.
+30 Introducción a la Programación
+4. Algoritmo CANT_ARENA
+5. DEFINIR metros, arena, largo, ancho Como Real;
+6. metros <- 0.5;
+7. ESCRIBIR “Ingrese el largo de la pared en metros: “;
+8. LEER largo;
+9. ESCRIBIR “Ingrese el ancho de la pared en metros: “;
+ LEER ancho;
+10. arena <- (largo * ancho) * metros;
+11. ESCRIBIR “La cantidad de arena necesaria es de: “;
+12. ESCRIBIR arena;
+13. FinAlgoritmo
+A Ejecutar Paso a Paso
+Al iniciar la ejecución del programa, se inicializan las variables definidas y
+se solicita la introducción del valor del largo de la pared en metros.
+1. *** Ejecución Iniciada. ***
+2. Ingrese el largo de la pared en metros:
+3. > 10
+Posteriormente, el valor del ancho de la pared en metros.
+1. Ingrese el ancho de la pared en metros:
+2. > 5
+Se realizan los cálculos especificados y se imprime en pantalla el resultado.
+Finaliza la ejecución del programa.
+1. La cantidad de arena necesaria es de:
+2. 25
+3. *** Ejecución Finalizada. ***
+CAPÍTULO 1.Estructura lineal | Ejercicio 2 31
+B Ejecutar
+1. *** Ejecución Iniciada. ***
+2. Ingrese el largo de la pared en metros:
+3. > 20
+4. Ingrese el ancho de la pared en metros:
+5. > 18
+6. La cantidad de arena necesaria es de:
+7. 180
+8. *** Ejecución Finalizada. *** 
